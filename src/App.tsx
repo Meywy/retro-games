@@ -14,6 +14,12 @@ const App: React.FC = () => {
     ? retroGames 
     : retroGames.filter(game => game.category === filter);
 
+  const getGameCountText = (count: number) => {
+    if (count === 1) return `${count} hra`;
+    if (count >= 2 && count <= 4) return `${count} hry`;
+    return `${count} her`;
+  };
+
   const handleGameClick = (game: RetroGame) => {
     setSelectedGame(game);
   };
@@ -51,7 +57,7 @@ const App: React.FC = () => {
               {filter === 'all' ? 'VŠECHNY RETRO HRY' : `KATEGORIE: ${filter.toUpperCase()}`}
             </h2>
             <p className="text-gray-400">
-              Nalezeno {filteredGames.length} her{filteredGames.length === 1 ? 'a' : filteredGames.length < 5 ? 'y' : ''}
+              Nalezeno {getGameCountText(filteredGames.length)}
             </p>
           </div>
           
