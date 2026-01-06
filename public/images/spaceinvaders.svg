@@ -1,0 +1,15 @@
+<svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="300" height="200" fill="#000"/>
+<rect x="20" y="20" width="260" height="160" fill="#111" stroke="#ff007f" stroke-width="2"/>
+<g fill="#00ff00">
+<rect x="100" y="40" width="20" height="20"/>
+<rect x="120" y="50" width="20" height="20"/>
+<rect x="140" y="60" width="20" height="20"/>
+<rect x="160" y="40" width="20" height="20"/>
+<rect x="180" y="50" width="20" height="20"/>
+</g>
+<polygon points="130,120 150,100 170,120" fill="#ffff00"/>
+<polygon points="100,140 80,160 120,160" fill="#ffff00"/>
+<polygon points="200,140 180,160 220,160" fill="#ffff00"/>
+<text x="150" y="175" font-family="monospace" font-size="11" fill="#ff007f" text-anchor="middle">SPACE INVADERS</text>
+</svg>
